@@ -14,5 +14,9 @@ namespace MyBlog.UI.Areas.Admin.ViewModels
 
         [Display(Name = "İçerik")]
         public string Content { get; set; }
+
+        [Required(ErrorMessage = "Lütfen Bir Kategori Secin")]
+        [Display(Name = "Kategoriler")]
+        public int? CategoryId { get; set; }
     }
 }
